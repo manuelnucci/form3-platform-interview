@@ -2,7 +2,11 @@ version: '3'
 
 networks:
   development:
+    name: development
+  staging:
+    name: staging
   production:
+    name: production
 services:
   vault-development:
     networks:

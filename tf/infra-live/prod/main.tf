@@ -1,5 +1,5 @@
 locals {
-  environment = "development"
+  environment = "production"
 }
 
 module "sample_application" {
@@ -27,7 +27,7 @@ module "sample_application" {
         ],
         "exposed_ports" : null,
         "advanced_networking" : {
-          "network_name" : "development",
+          "network_name" : "production",
         }
       }
     },
@@ -49,7 +49,7 @@ module "sample_application" {
         ],
         "exposed_ports" : null,
         "advanced_networking" : {
-          "network_name" : "development",
+          "network_name" : "production",
         }
       }
     },
@@ -71,7 +71,7 @@ module "sample_application" {
         ],
         "exposed_ports" : null,
         "advanced_networking" : {
-          "network_name" : "development",
+          "network_name" : "production",
         }
       }
     }
@@ -84,10 +84,10 @@ module "sample_application" {
       "environment_variables" : [],
       "exposed_ports" : {
         "internal_port" : 80,
-        "external_port" : 4080,
+        "external_port" : 4082,
       },
       "advanced_networking" : {
-        "network_name" : "development",
+        "network_name" : "production",
       }
     }
   }
