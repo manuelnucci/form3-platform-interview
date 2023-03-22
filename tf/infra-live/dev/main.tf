@@ -3,7 +3,7 @@ locals {
 }
 
 module "sample_application" {
-  source = "../../application"
+  source = "github.com/manuelnucci/form3-platform-interview.git?ref=v1.0.0//tf//application"
 
   environment             = local.environment
   vault_audit_file_path   = "/vault/logs/audit"
